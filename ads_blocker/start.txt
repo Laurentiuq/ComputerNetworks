@@ -1,0 +1,4 @@
+#!/bin/bash
+python -u ./dns_server.py &
+python -u ./dns_interface.py &
+wait

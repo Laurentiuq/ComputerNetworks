@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  dns-blocker:
+    build: .
+    volumes:
+      - ./blocked_requests.txt:/app/blocked_requests.txt
+    ports:
+      - 53:53/udp
